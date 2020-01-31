@@ -9,4 +9,4 @@
     # 3) Execute the script before submission and confirm the output
 
 
-
+cat ~/workspace/QBox/logs/vsftpd1.log | grep '230' | wc -l
