@@ -10,4 +10,4 @@
     # 3) Execute the script before submission and confirm the output. Delete the created directories/files, if any, before testing the script
 
 cd ~/workspace/QBox
-tree .
+tree
