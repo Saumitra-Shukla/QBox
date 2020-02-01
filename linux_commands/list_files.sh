@@ -7,5 +7,5 @@
     #    This command should work irrespective of the current working directory.
     # 2) Execute the script before submission and confirm the output
 
-ls -ls -t -r ~/workspace/QBox/logs
+ls -l -t -r ~/workspace/QBox/logs
 
