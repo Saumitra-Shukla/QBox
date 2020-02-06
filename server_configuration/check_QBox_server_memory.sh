@@ -7,7 +7,7 @@ if test $# -ne 1
    echo "Incorrect invocation of script. Usage: ./check_QBox_server_memory.sh /proc/meminfo"
    exit 1  # Failure
 fi
-
+#echo $#
 # Required minimum configuration
 requiredMemInKB=2000000        # 2 GB RAM, ideally it can be 2097152 KB
 
@@ -19,6 +19,10 @@ requiredMemInKB=2000000        # 2 GB RAM, ideally it can be 2097152 KB
     #    E.g. totalMemInKB=`<bash command>`
     # 3) Start the expression to populate the variable with "cat $1" which is the command line filename input. Check the Usage above. 
     # 4) Execute the script before submission and confirm the output
+
+totalMemInKB=`cat $1 | grep MemTotal | awk '{print $2}'`
+#echo $totalMemInKB
+#'
 
 if test $totalMemInKB -ge $requiredMemInKB
    then

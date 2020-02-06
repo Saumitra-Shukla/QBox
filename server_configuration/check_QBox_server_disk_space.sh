@@ -13,6 +13,8 @@ requiredDiskSpaceInMB=4096     # 4 GB Disk Space
     #    Note that the Disk Space mounted at "/" is the disk space available for QBox.
     # 2) Execute the script before submission and confirm the output
 
+diskSpaceInMB=`df --block-size=MB ~ | grep '/dev'| awk '{print $2}' | cut -d 'M' -f1`
+
 if test $diskSpaceInMB -ge $requiredDiskSpaceInMB
    then
    echo "Free Disk Space of $diskSpaceInMB MB is sufficient for QBox"
