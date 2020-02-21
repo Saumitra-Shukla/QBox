@@ -1,0 +1,2 @@
+23, 25, 27, 28, 29, 37, 39, 40
+This indicates that the server to which the packets are being sent is responding that some packets are missing or lost.

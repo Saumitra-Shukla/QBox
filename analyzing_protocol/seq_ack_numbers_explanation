@@ -1,0 +1,1 @@
+the 1st one is to synchronize the connection, second packet is synchronize and acknowledge, third packet is acknowledge, which cofirms the connection.
